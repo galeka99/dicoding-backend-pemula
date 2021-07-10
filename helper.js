@@ -9,4 +9,4 @@ exports.print = (message, error = false) => {
   }
 }
 
-exports.generateId = () => v1().replaceAll('-', '');
+exports.generateId = () => v1().replace(/-/g, '');
